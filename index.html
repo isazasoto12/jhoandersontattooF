@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jhoanderson Tattoo Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #121212;
+      color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      text-align: center;
+    }
+    .logo {
+      max-width: 300px;
+      margin: 2rem auto;
+      filter: drop-shadow(0 0 10px #e91e63);
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .logo:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(0 0 15px #ff4081);
+    }
+    .container {
+      background: #1e1e1e;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      max-width: 400px;
+      width: 90%;
+      box-sizing: border-box;
+    }
+    label {
+      display: block;
+      margin: 0.5rem 0 0.25rem;
+    }
+    select, input {
+      width: 100%;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .resultado {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      background: #2c2c2c;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 0.75rem;
+      background: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #c2185b;
+    }
+    .contact-barcode {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin: 3rem 1rem;
+      width: 100%;
+      max-width: 1200px;
+      box-sizing: border-box;
+    }
+    .contact-item {
+      background: #1e1e1e;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+    .contact-item img.icon {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 0.5rem;
+    }
+    .barcode {
+      margin-top: 0.5rem;
+      background: #fff;
+      padding: 0.5rem;
+      border-radius: 8px;
+      width: 100%;
+    }
+    .agendar-cita {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    .agendar-cita h2 {
+      margin-bottom: 1rem;
+    }
+    .agendar-cita a {
+      display: inline-block;
+      margin: 0.5rem;
+      text-decoration: none;
+      color: white;
+      background-color: #e91e63;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+    .agendar-cita a:hover {
+      background-color: #c2185b;
+    }
+    .galeria {
+      margin-top: 4rem;
+      width: 90%;
+      max-width: 1000px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .galeria img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+    @media (max-width: 600px) {
+      .logo {
+        max-width: 80%;
+      }
+      .container {
+        padding: 1rem;
+      }
+      .agendar-cita a {
+        width: 90%;
+        padding: 1rem;
+        font-size: 1rem;
+      }
+      .contact-barcode {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="./038b4bed-5077-4ff9-ad5e-eed816c0b7b7.png" alt="Logo Tattoo" class="logo">
+  <!-- Resto del contenido... -->
+</body>
+</html>
